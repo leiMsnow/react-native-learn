@@ -1,6 +1,14 @@
 第一步，环境搭建
 
-1、安装brew
+1.OS X - 当前仅支持 OS X
+2.推荐使用 Homebrew 的方式来安装 nvm，watchman 和 flow。
+3.安装 Node.js 4.0 或者更新的版本。
+    3.1 使用 Homebrew 来安装 nvm 或者参考 它的安装指南。接着运行 nvm install node && nvm alias default node, 它可以让您安装最新版本的 Node.js 并设置您的终端，所以你可以通过键入 node 来运行它。使用 Nvm 可以让您安装多个版本的 Node.js 并且在它们之间轻松切换。
+    3.2 npm 的更新之处。
+4.brew 安装 watchman。我们推荐您安装 watchman, 否则您可能在点击一个节点文件的时候出现错误。
+5.brew 安装 flow。如果您想使用 flow.
+
+1、安装Homebrew
 
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
