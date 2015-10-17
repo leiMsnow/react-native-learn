@@ -1,0 +1,14 @@
+第一步，环境搭建
+
+1、安装brew
+
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+在该主页可以看到使用命令：http://brew.sh/index_zh-cn.html
+
+
+PS: 我在安装完成的时候使用nvm提示 nvm command not found ，执行以下命令即可解决：
+
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.25.4/install.sh | bash
+  
+  
