@@ -8,14 +8,49 @@
 4.brew 安装 watchman。我们推荐您安装 watchman, 否则您可能在点击一个节点文件的时候出现错误。
 5.brew 安装 flow。如果您想使用 flow.
 
-1、安装Homebrew
+1、安装Homebrew ，Homebrew 是OS X 的一个包管理应用。
+在Homebrew的主页可以看到安装方法：http://brew.sh
 
+在终端使用以下命令：
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+loading...
 
-在该主页可以看到使用命令：http://brew.sh/index_zh-cn.html
+完成Homebrew的安装后，使用brew安装其它相应的依赖：
+
+1.1安装node
+    使用命令：brew install node 
+    node 是一个服务器端 JavaScript 解释器
+    继续loading...
+
+1.2安装watchman
+    使用命令：brew install watchman
+    watchman是用来检查文件变化的工具
+    loading...
+    
+1.3安装brew install flow
+    用来检测jsx的语法的工具
+    loading...
+    
+以上工具都安装完成之后，我们就可以通过npm来安装react native的命令行工具
+命令：npm install-g react-native-cli
+NPM（node package manager），通常称为node包管理器。
+顾名思义，它的主要功能就是管理node包，包括：安装、卸载、更新、查看、搜索、发布等。
+    loading...
+
+接来下，我们就可以根据npm的命令来创建react-native的工程了：
+记得创建的时候先从终端cd到你要下载的目录中
+命令：react-native init HelloWorld
+    loading...
+创建成功后，cd HelloWrold目录中
+
+使用命令：react-native run-android 就可以启动我们应用了(记得手机/模拟器连接电脑)
 
 
-PS: 我在安装完成的时候使用nvm提示 nvm command not found ，执行以下命令即可解决：
+常见问题Q/A：
+Q： nmp install -g -react-native-cli 无法安装
+A： 添加sudo权限
+
+Q：我在安装完成的时候使用nvm提示 nvm command not found ，执行以下命令即可解决：
 
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.25.4/install.sh | bash
   
